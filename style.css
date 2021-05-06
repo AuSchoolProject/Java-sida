@@ -1,6 +1,18 @@
 body {
   padding: 0px;
   margin: 0px;
+  background-image: url("cool-background.png");
+}
+
+header {
+  border-radius: 12px;
+  border-style: double;
+  box-shadow: 3px 3px black;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  background-image: url("white-background.jpg");
 }
 
 h1 {
@@ -10,7 +22,7 @@ h1 {
 }
 
 h2 {
-  color: darkgreen;
+  color: lightgreen;
   display: flex;
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -40,10 +52,11 @@ a {
   box-shadow: 2px 2px black;
   border-radius: 12px;
   border-color: grey;
+  background-color: white;
 }
 
 a:hover {
-  color: green;
+  color: lightgreen;
   text-shadow: 1px 0px green;
   transition: all;
   transition-duration: 300ms;
