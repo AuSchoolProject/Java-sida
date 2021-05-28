@@ -73,7 +73,6 @@ input {
   font-size: x-large;
   border: none;
 }
-.container {
-  display: flex;
-  justify-content: end;
+video {
+  margin-left: 35rem;
 }
