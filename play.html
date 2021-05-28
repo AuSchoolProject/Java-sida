@@ -8,18 +8,34 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div id="container">
-      <video width="800" height="600" controls>
-        <source src="Triple kill Qiyana.webm" type="video/mp4" />
-      </video>
-    </div>
-    <form>
-      <input type="radio" id="1" name="rating" value="1" />
-      <label for="male">1</label><br />
-      <input type="radio" id="2" name="rating" value="2" />
-      <label for="female">2</label><br />
-      <input type="radio" id="3" name="rating" value="3" />
-      <label for="other">3</label>
+    <form class="question">
+      <div class="play">
+        <video width="800" controls>
+          <source src="Triple kill Qiyana.webm" type="video/mp4" />
+        </video>
+      </div>
+      <div class="question">
+        <p>What rank is this from?</p>
+        <label>
+          <input name="answer" type="radio" value="0" checked /> Diamond
+        </label>
+        <label>
+          <input name="answer" type="radio" value="0" checked /> Platinum
+        </label>
+        <label>
+          <input name="answer" type="radio" value="0" checked /> Silver
+        </label>
+        <label>
+          <input name="answer" type="radio" value="0" checked /> Gold
+        </label>
+        <label>
+          <input name="answer" type="radio" value="1" checked /> Unranked
+        </label>
+      </div>
+      <button type="button" onclick="submitAnswer()">Submit Answer</button>
     </form>
+    <div class="result">
+      <p>Congrats you are right</p>
+    </div>
   </body>
 </html>
