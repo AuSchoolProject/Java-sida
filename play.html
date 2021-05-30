@@ -8,7 +8,7 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <form class="question">
+    <form class="questions">
       <div class="play">
         <video width="800" controls>
           <source src="Triple kill Qiyana.webm" type="video/mp4" />
@@ -19,23 +19,17 @@
         <label>
           <input name="answer" type="radio" value="0" checked /> Diamond
         </label>
-        <label>
-          <input name="answer" type="radio" value="0" checked /> Platinum
-        </label>
-        <label>
-          <input name="answer" type="radio" value="0" checked /> Silver
-        </label>
-        <label>
-          <input name="answer" type="radio" value="0" checked /> Gold
-        </label>
-        <label>
-          <input name="answer" type="radio" value="1" checked /> Unranked
-        </label>
+        <label> <input name="answer" type="radio" value="0" /> Platinum </label>
+        <label> <input name="answer" type="radio" value="0" /> Silver </label>
+        <label> <input name="answer" type="radio" value="0" /> Gold </label>
+        <label> <input name="answer" type="radio" value="1" /> Unranked </label>
       </div>
-      <button type="button" onclick="submitAnswer()">Submit Answer</button>
+      <button class="submitbutton" type="button" onclick="submitAnswer()">
+        Submit Answer
+      </button>
     </form>
     <div class="result">
-      <p>Congrats you are right</p>
+      <button type="button" onclick="reset()">Reset</button>
     </div>
   </body>
 </html>
